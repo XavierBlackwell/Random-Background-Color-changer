@@ -21,8 +21,11 @@ const bgHexCodeSpanElement = document.querySelector("#bg-hex-code");
 
 function changeBackgroundColor() {
   // Call getRandomIndex() to get a random index
-  const color = darkColorsArr[getRandomIndex()]; 
+  const color = darkColorsArr[getRandomIndex()];
 
   bgHexCodeSpanElement.innerText = color; // Display the color code
   body.style.backgroundColor = color; // Change the background color
 }
+const btn = document.querySelector("#btn");
+
+btn.onclick = changeBackgroundColor;
